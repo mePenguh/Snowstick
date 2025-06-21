@@ -1,0 +1,38 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "music_disc_tears",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "!jukebox_playable": {},
+                                "consumable": {
+                                    "consume_seconds": 2147483647,
+                                    "animation": "none",
+                                    "has_consume_particles": false
+                                },
+                                "custom_data": {
+                                    "snowstick": true
+                                },
+                                "item_name": {
+                                    "translate": "snowstick:snowball_on_a_stick"
+                                },
+                                "item_model": "music_disc_tears",
+                                "enchantments": {
+                                    "snowstick:boosting":1
+                                },
+                                "minecraft:max_damage": 25,
+                                "minecraft:damage": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

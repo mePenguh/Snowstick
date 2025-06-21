@@ -1,0 +1,188 @@
+{
+    "description": "",
+    "exclusive_set": [],
+    "supported_items": [
+        "music_disc_tears"
+    ],
+    "primary_items": [],
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand",
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "all_of",
+                    "terms": [
+                        {
+                            "condition": "any_of",
+                            "terms": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "music_disc_tears",
+                                                "components": {
+                                                    "custom_data": {
+                                                        "snowstick": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "offhand": {
+                                                "items": "music_disc_tears",
+                                                "components": {
+                                                    "custom_data": {
+                                                        "snowstick": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "condition": "entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "snowstick.use": 1
+                            }
+                        },
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "vehicle": {
+                                    "type": "happy_ghast"
+                                }
+                            }
+                        },
+                        {
+                            "condition": "inverted",
+                            "term": {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "vehicle": {
+                                        "components": {
+                                            "attribute_modifiers": [
+                                                {
+                                                    "type": "flying_speed",
+                                                    "id": "snowstick:boost",
+                                                    "amount": 0.02,
+                                                    "operation": "add_value"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "all_of",
+                    "effects": [
+                        {
+                            "type": "change_item_damage",
+                            "amount": 2
+                        },
+                        {
+                            "type": "run_function",
+                            "function": "snowstick:action/init"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "all_of",
+                        "terms": [
+                            {
+                                "condition": "any_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "mainhand": {
+                                                    "items": "music_disc_tears",
+                                                    "components": {
+                                                        "custom_data": {
+                                                            "snowstick": true
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "offhand": {
+                                                    "items": "music_disc_tears",
+                                                    "components": {
+                                                        "custom_data": {
+                                                            "snowstick": true
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "snowstick.use": 1
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "vehicle": {
+                                        "type": "happy_ghast"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "effect": {
+                    "type": "run_function",
+                    "function": "snowstick:fail"
+                }
+            }
+        ]
+    }
+}

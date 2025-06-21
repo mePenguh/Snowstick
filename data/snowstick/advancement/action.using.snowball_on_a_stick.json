@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "temp": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "music_disc_tears",
+                    "components": {
+                        "custom_data": {
+                            "snowstick": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "snowstick:used"
+    }
+}
