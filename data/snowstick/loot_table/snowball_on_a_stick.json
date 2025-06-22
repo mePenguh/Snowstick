@@ -28,7 +28,7 @@
                                     "snowstick:boosting":1
                                 },
                                 "minecraft:max_damage": 25,
-                                "minecraft:damage": 24,
+                                "minecraft:damage": 0,
                                 "enchantment_glint_override": false,
                                 "tooltip_display": {
                                     "hidden_components": [
