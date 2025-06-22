@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "duraChange": {
+            "trigger": "item_durability_changed",
+            "conditions": {
+                "item": {
+                    "items": "music_disc_tears",
+                    "components": {
+                        "custom_data": {
+                            "snowstick": true
+                        },
+                        "damage": 24
+                    }
+                },
+                "delta": -1,
+                "durability": 0,
+                "player": {
+                    "slots": {
+                        "weapon.offhand": {
+                            "items": "music_disc_tears",
+                            "components": {
+                                "custom_data": {
+                                    "snowstick": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "snowstick:remainder/offhand"
+    }
+}

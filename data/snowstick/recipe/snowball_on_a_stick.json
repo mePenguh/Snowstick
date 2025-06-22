@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": "minecraft:fishing_rod",
+        "X": "minecraft:snowball"
+    },
+    "pattern": [
+        "# ",
+        " X"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:music_disc_tears",
+        "components": {
+            "!jukebox_playable": {},
+            "consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "none",
+                "has_consume_particles": false
+            },
+            "custom_data": {
+                "snowstick": true
+            },
+            "item_name": {
+                "translate": "snowstick.snowball_on_a_stick",
+                "color": "white"
+            },
+            "item_model": "snowstick:snowball_on_a_stick",
+            "enchantments": {
+                "snowstick:boosting": 1
+            },
+            "minecraft:max_damage": 25,
+            "minecraft:damage": 0,
+            "enchantment_glint_override": false,
+            "tooltip_display": {
+                "hidden_components": [
+                    "enchantments"
+                ]
+            },
+            "rarity": "common"
+        }
+    }
+}

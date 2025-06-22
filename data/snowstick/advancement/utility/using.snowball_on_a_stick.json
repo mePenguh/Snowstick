@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "temp": {
+        "usingSnowstick": {
             "trigger": "using_item",
             "conditions": {
                 "item": {
