@@ -24,13 +24,13 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "all_of",
+                    "type": "all_of",
                     "terms": [
                         {
-                            "condition": "any_of",
+                            "type": "any_of",
                             "terms": [
                                 {
-                                    "condition": "entity_properties",
+                                    "type": "entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -46,7 +46,7 @@
                                     }
                                 },
                                 {
-                                    "condition": "entity_properties",
+                                    "type": "entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "equipment": {
@@ -64,25 +64,25 @@
                             ]
                         },
                         {
-                            "condition": "entity_scores",
+                            "type": "entity_scores",
                             "entity": "this",
                             "scores": {
                                 "snowstick.use": 1
                             }
                         },
                         {
-                            "condition": "entity_properties",
+                            "type": "entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "vehicle": {
-                                    "type": "happy_ghast"
+                                    "entity_type": "happy_ghast"
                                 }
                             }
                         },
                         {
-                            "condition": "inverted",
+                            "type": "inverted",
                             "term": {
-                                "condition": "entity_properties",
+                                "type": "entity_properties",
                                 "entity": "this",
                                 "predicate": {
                                     "vehicle": {
@@ -109,25 +109,25 @@
             },
             {
                 "requirements": {
-                    "condition": "all_of",
+                    "type": "all_of",
                     "terms": [
                         {
-                            "condition": "entity_scores",
+                            "type": "entity_scores",
                             "entity": "this",
                             "scores": {
                                 "snowstick.use": 1
                             }
                         },
                         {
-                            "condition": "any_of",
+                            "type": "any_of",
                             "terms": [
                                 {
-                                    "condition": "all_of",
+                                    "type": "all_of",
                                     "terms": [
                                         {
-                                            "condition": "inverted",
+                                            "type": "inverted",
                                             "term": {
-                                                "condition": "entity_properties",
+                                                "type": "entity_properties",
                                                 "entity": "this",
                                                 "predicate": {
                                                     "equipment": {
@@ -144,9 +144,9 @@
                                             }
                                         },
                                         {
-                                            "condition": "inverted",
+                                            "type": "inverted",
                                             "term": {
-                                                "condition": "entity_properties",
+                                                "type": "entity_properties",
                                                 "entity": "this",
                                                 "predicate": {
                                                     "equipment": {
@@ -165,9 +165,9 @@
                                     ]
                                 },
                                 {
-                                    "condition": "inverted",
+                                    "type": "inverted",
                                     "term": {
-                                        "condition": "entity_scores",
+                                        "type": "entity_scores",
                                         "entity": "this",
                                         "scores": {
                                             "snowstick.use": 0
@@ -175,19 +175,19 @@
                                     }
                                 },
                                 {
-                                    "condition": "inverted",
+                                    "type": "inverted",
                                     "term": {
-                                        "condition": "entity_properties",
+                                        "type": "entity_properties",
                                         "entity": "this",
                                         "predicate": {
                                             "vehicle": {
-                                                "type": "happy_ghast"
+                                                "entity_type": "happy_ghast"
                                             }
                                         }
                                     }
                                 },
                                 {
-                                    "condition": "entity_properties",
+                                    "type": "entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "vehicle": {
